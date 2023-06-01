@@ -20,9 +20,11 @@
      }
 }
 *{
+     box-sizing: border-box;
      border: 0px solid ;
      font-family: 'Bona Nova', serif;
      font-family: 'Mukta', sans-serif;
+  
 }
 
 
@@ -64,7 +66,7 @@ body{
      display: flex;
      flex-direction: row;
      align-items: center;
-     padding: 5px 0;
+     padding: 5px 2.5px;
 }
 
 .signIn_container button{
@@ -375,7 +377,7 @@ body{
 }
 
 .Home_page .about_sec .about_para ul .col{
-     width: clamp(200px, 25%, 400px);
+     width: clamp(380px, 25%, 600px);
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -419,7 +421,11 @@ body{
           font-size: 14px;
      }
      .Home_page .Hello_sec, .Home_page .Hello_sec .Hello_overlay{
-          aspect-ratio: 100/60;
+          aspect-ratio: 100/70;
           border-radius: 10px;
+     }
+     .Home_page .Hello_sec .intro_text{
+          aspect-ratio: 100/20;
+          width: 80%;
      }
 }
