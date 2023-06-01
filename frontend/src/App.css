@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
+@keyframes rotate{
+     from{
+          transform: rotateY(0deg);
+     }
+     to{
+          transform: rotateY(360deg);
+     }
+}
 @keyframes textMover{
      0%{
           left:-100%;
@@ -95,7 +103,7 @@ body{
 }
 
 .logo_container img{
-     width: clamp(100px, 40%, 200px);
+     width: clamp(60px, 25%, 200px);
 }
 
 .divider_line{
@@ -118,15 +126,26 @@ body{
      padding: 10px;
      letter-spacing: 0.5px;
      flex-wrap: wrap;
+     transition: all 0.5s;
 }
 
 .Header__row ul a{
      color:#212b35;
 }
-
+.Header__row ul li{
+     transition: all 0.5s;
+}
 .Header__row ul li:hover{
      color: #062a4e;
      cursor: pointer;
+     background: #580303;
+     color: white;
+     padding: 0 10px;
+     border-radius: 5px;
+}
+
+.Header__row ul li:hover a{
+     color:white;
 }
 
 .Footer{
@@ -306,6 +325,16 @@ body{
      letter-spacing: 0.85px;
 }
 
+.search_container .search_list ul li{
+     transition: all 0.5s ;
+}
+
+.search_container .search_list ul li:hover{
+     padding: 0 10px;
+     border-bottom: 2px solid #580303;
+     
+}
+
 .search_container .search_list ul a{
      color: white;
 }
@@ -323,7 +352,7 @@ body{
      padding: 5px 20px;
      border-radius:  5px;
      font-size: 1rem;
-     caret-color: brown;
+     caret-color: #580303;
      line-height: 15px;
      outline: none;
 }
@@ -377,7 +406,7 @@ body{
 }
 
 .Home_page .about_sec .about_para ul .col{
-     width: clamp(380px, 25%, 600px);
+     width: clamp(350px, 20%, 450px);
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -392,7 +421,7 @@ body{
 }
 
 .Home_page .about_sec .about_para ul .col img{
-     width: 60%;
+     width: 90%;
      aspect-ratio: 1/1;
      border-radius: 10%;
      box-shadow: 2px 1px 5px rgb(175, 170, 170);
@@ -405,7 +434,43 @@ body{
      box-shadow: none;
 }
 
+.company_sec{
+     width: clamp(390px, 70%, 1400px);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 10px;
+     margin: 10px 0;
+}
 
+.company_sec .text{
+     width: clamp(350px, 50%, 800px);
+}
+
+.company_sec .text h5{
+     font-size: 1.2rem;
+     text-align: center;
+     margin: 0;
+}
+
+.company_sec .text p{
+     text-align: center;
+     font-size: 0.9rem;
+     width: 80%;
+     margin: auto;
+}
+
+.company_sec .images{
+     width:clamp(35px, 50%, 600px);
+     display: flex;
+     align-items: center;
+}
+
+.company_sec .images img{
+     width: 100%;
+     border-radius: 10px;
+}
 @media (max-width: 1200px){
      :root{
           font-size: 18px;
@@ -428,4 +493,10 @@ body{
           aspect-ratio: 100/20;
           width: 80%;
      }
+}
+
+.rotate_globe{
+     color: blue;
+     font-size: 50px;
+     animation:2s rotate infinite;
 }

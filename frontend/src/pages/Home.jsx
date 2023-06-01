@@ -1,5 +1,5 @@
 //import Home_1 from "../assets/carImages/Home_1.jpg";
-import Home_2 from "../assets/carImages/Home_2.jpeg";
+import Home_2 from "../assets/carImages/home_5.jpg";
 import Truck_1 from "../assets/carImages/truck_1.jpeg";
 import Truck_2 from "../assets/carImages/truck_2.jpeg";
 import Truck_3 from "../assets/carImages/truck_3.jpeg";
@@ -7,6 +7,7 @@ import Kigali from "../assets/carImages/Kigali_1.jpg";
 import Bukavu from "../assets/carImages/Bukavu_1.png";
 import Kampala from "../assets/carImages/Kampala_1.jpg";
 import Dar_City from "../assets/carImages/Dar_City.jpg"
+import Home_3 from "../assets/carImages/home_2.jpg";
  
 import { useEffect, useState } from "react";
 
@@ -45,6 +46,15 @@ const Home = () => {
                          <input type="text" placeholder="Search anything" />
                          <button>Search</button>
                     </div>
+               </div>
+          </div>
+          <div className="company_sec" >
+               <div className="text">
+                    <h5>Welcome to Levy Trading Motors, your ultimate destination for exceptional solutions.</h5>
+                    <p>We are a premier transportation company dedicated to providing reliable, efficient, and top-quality services to meet all your automotive needs.</p>
+               </div>
+               <div className="images">
+                    <img src={Home_3} alt="Our Company" />
                </div>
           </div>
           <div className="about_sec">
@@ -96,10 +106,10 @@ const Home = () => {
                <div className="title"><h3>Get the best trucks from United Kingdom</h3></div>
           </div>
           <div className="trucks_sec">
-               <div className="title"><h3>Do with us the best Car deals from Dubai</h3></div>
+               <div className="title"><h3>Do with us the best Car deals from United Arab Emirates</h3></div>
           </div>
           <div className="trucks_sec">
-               <div className="title"><h3>Get best trucks from Ireland</h3></div>
+               <div className="title"><h3>Get best trucks from Belgium</h3></div>
           </div>
           
           <div className="trucks_sec">
