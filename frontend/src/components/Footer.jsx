@@ -1,4 +1,4 @@
-import Logo from "../assets/levy2cd.png";
+import Logo from "../assets/levy2dg.png";
 
 const Footer = () => {
   return (

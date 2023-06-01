@@ -1,4 +1,4 @@
-import Logo from "../assets/levy2cd.png";
+import Logo from "../assets/levy2dg.png";
 import { DividerLine } from "./SmallComponents";
 import { NavLink } from "react-router-dom";
 

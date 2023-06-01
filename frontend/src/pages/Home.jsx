@@ -57,12 +57,12 @@ const Home = () => {
                          </div>
                          <div className="col">
                               <img src={Truck_2} alt="Truck_2" />
-                              <li>Shipping of trucks</li>
+                              <li>Inland Transportation</li>
                          </div>
                          
                          <div className="col">
                               <img src={Truck_3} alt="Truck_3" />
-                              <li>Dealing Cars for clients</li>
+                              <li>Dealing Trucks for clients</li>
                          </div>
                          
                          
