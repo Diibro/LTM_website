@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+@keyframes textMover{
+     0%{
+          left:-100%;
+     }
+     10%{
+          left: 0%;
+     }
+
+     20%{
+          left:0%;
+     }
+     40%{
+          left:100%;
+     }
+     100%{
+          left: 100%;
+     }
+}
+*{
+     border: 0px solid ;
+     font-family: 'Bona Nova', serif;
+     font-family: 'Mukta', sans-serif;
+}
+
+
+
+
+:root{
+     font-size: 20px;
+}
+
+a{
+     text-decoration: none ;
+}
+
+body{
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     overflow-x: hidden;
+}
+
+.Header{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.Header__row, .Footer_row{
+     width: clamp(400px, 70%, 1400px);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.logo_container, .signIn_container{
+     width: clamp(190px, 20%, 300px);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 5px 0;
+}
+
+.signIn_container button{
+     width: clamp(150px, 60%, 200px);
+     aspect-ratio: 100/25;
+     font-size: 0.8rem;
+     font-weight:500;
+     background: rgb(255, 255, 255);
+     border: 1px solid rgb(228, 222, 222);
+     border-radius: 5px;
+     transition: all 1s;
+     color: #031c2b;
+}
+
+.signIn_container{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+}
+
+.signIn_container button:hover{
+     cursor: pointer;
+     background: rgb(213, 230, 238);
+     color: #050a0e;
+}
+
+.logo_container img{
+     width: clamp(100px, 40%, 200px);
+}
+
+.divider_line{
+     width: 100%;
+     border-bottom:1px solid rgb(202, 189, 189);
+}
+
+.Header__row ul{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     border: 1px solid #d1c9c9;
+     list-style-type: none;
+     font-size: 0.8rem;
+     font-weight: 600;
+     color:#212b35;
+     border-radius: 5px;
+     padding: 10px;
+     letter-spacing: 0.5px;
+     flex-wrap: wrap;
+}
+
+.Header__row ul a{
+     color:#212b35;
+}
+
+.Header__row ul li:hover{
+     color: #062a4e;
+     cursor: pointer;
+}
+
+.Footer{
+     width: 100%;
+     background: #eefbff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.Footer_row{
+     align-items: flex-start;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     padding: 20px 0;
+}
+
+.Footer_row .col{
+     width: clamp(190px, 20%, 300px);
+}
+
+.Footer_row .col h3{
+     font-size: 0.95rem;
+     font-weight: 600;
+     width: 100%;
+}
+
+.Footer_row .col ul{
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin: 0;
+     padding: 0 10px;
+}
+
+.Footer_row .col ul li{
+     width: 100%;
+     font-size: 0.8rem;
+     margin: 5px 0;
+}
+
+.Footer_row .col ul li:hover{
+     cursor: pointer;
+}
+
+.Footer_down{
+     justify-content: space-between;
+}
+
+.Footer_down .col{
+     width: clamp(190px, 45%, 500px);
+}
+
+.Footer_down .col img{
+     width: 40%;
+}
+
+.Footer_down .col p{
+     font-size: 0.85rem;
+}
+
+.Home_page{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center ;
+     padding: 10px 0;
+
+}
+
+.Home_page .Hello_sec{
+     position: relative;
+     width: clamp(400px, 70%, 1400px);
+     aspect-ratio: 100/30;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center ;
+}
+
+.Home_page .Hello_sec .Hello_overlay{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     aspect-ratio: 100/30;
+     background-color: #050a1485;
+     border-radius:20px;
+     z-index: 0;
+}
+
+.Home_page .Hello_sec .intro_text, .Home_page .Hello_sec .search_container{
+     z-index: 1;
+}
+
+.Home_page .Hello_sec .intro_text{
+     position: relative;
+     color: white;
+     font-size: 1.1rem;
+     font-weight: 500;
+     letter-spacing: 0.6px;
+     text-shadow: 1px 2px black;
+     overflow-x: hidden;
+     width: 60%;
+     aspect-ratio: 100/7;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
+     overflow: hidden;
+}
+
+.Home_page .Hello_sec .intro_text h3{
+     position: absolute;
+     top:0;
+     margin: 0;
+     width: 100%;
+}
+.Home_page .Hello_sec .intro_text .h3_1{
+     left: 0%;
+     animation:  25s textMover infinite;
+}
+
+.Home_page .Hello_sec .intro_text .h3_2{
+     left: -100%;
+     animation:  25s textMover 7.5s infinite;
+}
+
+.Home_page .Hello_sec .intro_text .h3_3{
+     left: -100%;
+     animation:  25s textMover 15s infinite;
+}
+
+.Home_page .Hello_sec .search_container{
+     width: clamp(390px, 70%, 1200px);
+     background: rgba(5, 11, 15, 0.514);
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 0;
+}
+
+.search_container .search_list{
+     width: 95%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: left;
+     color: white;
+}
+
+.search_container .search_list h3{
+     font-size: 0.9rem;
+     width: 25%;
+     letter-spacing: 0.95px;
+}
+
+.search_container .search_list ul{
+     list-style: none;
+     padding: 0;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     width: clamp(350px, 60%, 1000px);
+     font-size: 0.75rem;
+     font-weight: 600;
+     letter-spacing: 0.85px;
+}
+
+.search_container .search_list ul a{
+     color: white;
+}
+
+.search_container .search_form{
+     width: 95%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.search_container .search_form input{
+     width: 80%;
+     padding: 5px 20px;
+     border-radius:  5px;
+     font-size: 1rem;
+     caret-color: brown;
+     line-height: 15px;
+     outline: none;
+}
+
+.search_container .search_form input:active{
+     outline: none;
+}
+.search_container .search_form button{
+     width: 15%;
+     font-size: 1.1rem;
+     padding: 5px 5px;
+     border-radius: 5px;
+     background: #580303;
+     color: white;
+     transition: all 0.5s;
+}
+
+.search_container .search_form button:hover{
+     cursor: pointer;
+     background: #a52828;
+}
+
+
+.Home_page .about_sec{
+     width: clamp(400px, 70%, 1400px);
+     position: relative;
+}
+
+.Home_page .about_sec .about_para{
+     width: 100%;
+
+}
+
+.Home_page .about_sec .about_para h4{
+     font-size: 0.95rem;
+     text-align: center;
+     width: 100%;
+     background: #eefbff;
+     padding: 10px 0;
+     border-radius: 10px;
+}
+
+.Home_page .about_sec .about_para ul{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     list-style: none;
+     width: 100%;
+     flex-wrap: wrap;
+}
+
+.Home_page .about_sec .about_para ul .col{
+     width: clamp(200px, 25%, 400px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.Home_page .about_sec .about_para ul .col li{
+     font-size: 0.8rem;
+     font-weight: 600;
+     margin: 10px 0;
+     text-align: center;
+}
+
+.Home_page .about_sec .about_para ul .col img{
+     width: 60%;
+     aspect-ratio: 1/1;
+     border-radius: 10%;
+     box-shadow: 2px 1px 5px rgb(175, 170, 170);
+     transition: all 1s;
+}
+
+.Home_page .about_sec .about_para ul .col img:hover{
+     transform: scale3d(1.2, 1.2, 1.2);
+     cursor: pointer;
+     box-shadow: none;
+}
+
+
+@media (max-width: 1200px){
+     :root{
+          font-size: 18px;
+     }
+     .Home_page .Hello_sec, .Home_page .Hello_sec .Hello_overlay{
+          aspect-ratio: 100/50;
+          border-radius: 10px;
+     }
+}
+
+@media (max-width: 768px){
+     :root{
+          font-size: 14px;
+     }
+     .Home_page .Hello_sec, .Home_page .Hello_sec .Hello_overlay{
+          aspect-ratio: 100/60;
+          border-radius: 10px;
+     }
+}
