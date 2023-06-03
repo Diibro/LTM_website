@@ -1,20 +1,25 @@
 //import Home_1 from "../assets/carImages/Home_1.jpg";
 import Home_2 from "../assets/carImages/home_5.jpg";
 import Truck_1 from "../assets/carImages/truck_1.jpeg";
-import Truck_2 from "../assets/carImages/truck_2.jpeg";
+import Truck_2 from "../assets/carImages/5.png";
 import Truck_3 from "../assets/carImages/truck_3.jpeg";
 import Kigali from "../assets/carImages/Kigali_1.jpg";
 import Bukavu from "../assets/carImages/Bukavu_1.png";
 import Kampala from "../assets/carImages/Kampala_1.jpg";
 import Dar_City from "../assets/carImages/Dar_City.jpg"
-import Home_3 from "../assets/carImages/home_2.jpg";
+
+
+
  
 import { useEffect, useState } from "react";
 
-
+import Slider from "../components/slider/slider";
 import {NavLink} from "react-router-dom";
 
+
+
 const Home = () => {
+
      const [text, setText] = useState("The best Transport Agency in East Africa");
      useEffect(( ) => {
           var count = 0;
@@ -48,18 +53,10 @@ const Home = () => {
                     </div>
                </div>
           </div>
-          <div className="company_sec" >
-               <div className="text">
-                    <h5>Welcome to Levy Trading Motors, your ultimate destination for exceptional solutions.</h5>
-                    <p>We are a premier transportation company dedicated to providing reliable, efficient, and top-quality services to meet all your automotive needs.</p>
-               </div>
-               <div className="images">
-                    <img src={Home_3} alt="Our Company" />
-               </div>
-          </div>
+          <Slider/>
           <div className="about_sec">
                <div className="about_para">
-                    <h4>At Levy Trading Motors we have these services for you</h4>
+                    <h4>At Levy Trading Motors we provide</h4>
                     <ul>
                          <div className="col">
                               <img src={Truck_1} alt="Truck_1" />
