@@ -1,8 +1,8 @@
 //import Home_1 from "../assets/carImages/Home_1.jpg";
 import Home_2 from "../assets/carImages/home_5.jpg";
-import Truck_1 from "../assets/carImages/truck_1.jpeg";
+import Truck_1 from "../assets/new/home_7.png";
 import Truck_2 from "../assets/carImages/5.png";
-import Truck_3 from "../assets/carImages/truck_3.jpeg";
+import Truck_3 from "../assets/new_images/Truck_2.jpeg";
 import Kigali from "../assets/carImages/Kigali_1.jpg";
 import Bukavu from "../assets/carImages/Bukavu_1.png";
 import Kampala from "../assets/carImages/Kampala_1.jpg";
@@ -57,25 +57,40 @@ const Home = () => {
           <div className="about_sec">
                <div className="about_para">
                     <h4>At Levy Trading Motors we provide</h4>
-                    <ul>
+                    <div className="ul">
                          <div className="col">
-                              <img src={Truck_1} alt="Truck_1" />
-                              <li>Transportation of goods</li>
+                              <div className="row">
+                                   <img src={Truck_1} alt="Truck_1" />
+                              </div>
+                              <div className="row text">
+                                   <h5>Shipping of trucks</h5>
+                                   <p>Work with us and get the truck of you choice shipped at your desired destination. We do shipping in the countries:<br/> <b>United Araba Emirates, United Kingdom and South Korea</b></p>
+                              </div>
                          </div>
                          <div className="col">
-                              <img src={Truck_2} alt="Truck_2" />
-                              <li>Inland Transportation</li>
+                              <div className="row">
+                                   <img src={Truck_2} alt="Truck_2" />
+                              </div>
+                              <div className="row text">
+                                   <h5>Inland Transportation</h5>
+                                   <p>Get your goods devlivered within in East Africa. Wok with the best transportation Company in <br /><b>Tanzania-Dar Es Salam, Rwanda-Kigali, DRC-Bukavu</b></p>
+                              </div>
                          </div>
                          
                          <div className="col">
-                              <img src={Truck_3} alt="Truck_3" />
-                              <li>Dealing Trucks for clients</li>
+                              <div className="row">
+                                   <img src={Truck_3} alt="Truck_3" />
+                              </div>
+                              <div className="row text">
+                                   <h5>Dealing Trucks</h5>
+                                   <p>Work with the most popular agency in dealing trucks and selling your used trucks at your desired price. Create an account and enjoy the best car deals on any continent.</p>
+                              </div>
                          </div>
                          
                          
-                    </ul>
+                    </div>
                     <h4>We do transportation of goods with in East Africa countries:</h4>
-                    <ul>
+                    <div className="ul">
                          <div className="col">
                               <img src={Kigali} alt="Kigali City" />
                               <li>Rwanda-Kigali</li>
@@ -92,11 +107,7 @@ const Home = () => {
                               <img src={Dar_City} alt="Dar Es Salam" />
                               <li>Tanzania-Dar Es Salam</li>
                          </div>
-                         
-                         
-                         
-                         
-                    </ul>
+                    </div>
                </div>
           </div>
           <div className="trucks_sec">
