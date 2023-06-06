@@ -9,6 +9,8 @@ import Kampala from "../assets/carImages/Kampala_1.jpg";
 import Dar_City from "../assets/carImages/Dar_City.jpg";
 import Back_1 from "../assets/carImages/Home_1.jpg";
 
+import {AiOutlineArrowRight} from 'react-icons/ai'
+
 
 
  
@@ -115,18 +117,10 @@ const Home = () => {
                     </div>
           </div>
           <div className="trucks_sec">
-               <div className="title"><h3>Get the best trucks from United Kingdom</h3></div>
-          </div>
-          <div className="trucks_sec">
-               <div className="title"><h3>Do with us the best Car deals from United Arab Emirates</h3></div>
-          </div>
-          <div className="trucks_sec">
-               <div className="title"><h3>Get best trucks from Belgium</h3></div>
-          </div>
-          
-          <div className="trucks_sec">
-               <div className="title"><h3>Do with us the best Car deals from South Korea</h3></div>
-               
+               <div className="title"><h3>Get the best trucks from United Kingdom</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get the best trucks from United Arab Emirates</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get best trucks from Belgium</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get the best trucks from South Korea</h3><i><AiOutlineArrowRight/></i></div>
           </div>
     </div>
   )
