@@ -424,7 +424,7 @@ body{
 }
 
 .Home_page .about_sec .about_para .ul .col{
-     width: clamp(390px, 25%, 500px);
+     width: clamp(390px, 25%, 600px);
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -474,9 +474,9 @@ body{
 
 .company_sec{
      width: clamp(390px, 70%, 1400px);
-     box-shadow: 1px 1px 3px #5c3737;
-     padding: 1px;
-     overflow-x: hidden;
+     box-shadow: 1px 1px 3px #815e5e;
+     padding: 0px;
+     overflow: hidden;
      position: relative;
      margin: 20px 0;
      border-radius: 10px;
@@ -499,6 +499,7 @@ body{
      transition: all 1s;
      will-change: left, right;
      flex-wrap: wrap;
+     overflow: hidden;
 }
 
 
@@ -518,7 +519,7 @@ body{
 }
 
 .company_sec .btn-left, .company_sec .btn-right{
-     width: 6%;
+     width: clamp(70px, 6%, 400px);
      font-size:60px;
      color: #4d4d4cc5;
      z-index: 101;
@@ -534,12 +535,12 @@ body{
 
 .company_sec .btn-left{
      position:absolute;
-     left: 1%;
+     left: 0%;
 }
 
 .company_sec .btn-right{
      position:absolute;
-     right: 1%;
+     right: 0%;
 }
 
 .company_sec .btn-left:hover, .company_sec .btn-right:hover{
@@ -548,7 +549,7 @@ body{
 }
 
 .company_sec .slide .text{
-     width: clamp(380px, 50%, 800px);
+     width: clamp(390px, 50%, 800px);
      padding: 20px;
 }
 
@@ -570,7 +571,7 @@ body{
 }
 
 .company_sec .slide .images{
-     width:clamp(380px, 50%, 600px);
+     width:clamp(390px, 50%, 600px);
      display: flex;
      align-items: center;
 }
@@ -581,6 +582,86 @@ body{
      aspect-ratio: 100/70;
      box-shadow: 1px 1px 10px #271717;
 }
+
+.country_sec{
+     position: relative;
+     width: clamp(390px, 70%, 1400px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     background: #001724;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: 30px 0;
+     color: white;
+     background-size: 100%;
+     padding: 30px 0;
+}
+
+.country_sec .cover{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     background: #05213169;
+     z-index: 0;
+}
+
+.country_sec h4{
+     width: 80%;
+     z-index: 1;
+}
+
+.country_sec .ul{
+     z-index: 1;
+     width: 80%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content:center ;
+     list-style: none;
+}
+
+.country_sec .ul .col{
+     position: relative;
+     width: clamp(150px, 25%, 400px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     transition: all 1s;
+}
+
+.country_sec .ul .col:hover{
+     cursor: pointer;
+     transform: scale(1.2);
+}
+
+.country_sec .ul .col:hover li{
+     position: absolute;
+     cursor: pointer;
+     top:50%;
+}
+
+.country_sec .ul .col img{
+     width: 80%;
+     aspect-ratio: 1/1;
+     border-radius: 50%;
+     box-shadow: 1px 1px 10px gray;
+}
+
+.country_sec .ul .col li{
+     position: relative;
+     font-size: 0.8rem;
+     font-weight: 600;
+     background: #003c8073;
+     margin: 5px 0;
+     padding:0 10px;
+     transition: all 0.5s;
+}
 @media (max-width: 1200px){
      :root{
           font-size: 18px;
@@ -590,8 +671,27 @@ body{
           border-radius: 10px;
      }
      .company_sec {
-          aspect-ratio: 100/45;
+          aspect-ratio: 100/55;
      }
+     .company_sec .slide{
+          padding: 0;
+          aspect-ratio: 100/65;
+          justify-content: center;
+     }
+     .company_sec .slide .text{
+          width: 100%;
+          color: white;
+          text-shadow: 1px 1px 5px rgb(3, 10, 34);
+          background: rgba(2, 23, 49, 0.336);
+     }
+     .company_sec .slide .images {
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          left: 0;
+          width: 100%;
+     }
+     
 }
 
 @media (max-width: 768px){
@@ -607,7 +707,18 @@ body{
           width: 80%;
      }
      .company_sec {
-          aspect-ratio: 100/140;
+          padding: 0;
+          aspect-ratio: 100/65;
+     }
+     .company_sec .slide{
+          padding: 0;
+          aspect-ratio: 100/80;
+     }
+     .company_sec .slide .images {
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          left: 0;
      }
 }
 

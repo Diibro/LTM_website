@@ -6,7 +6,8 @@ import Truck_3 from "../assets/new_images/Truck_2.jpeg";
 import Kigali from "../assets/carImages/Kigali_1.jpg";
 import Bukavu from "../assets/carImages/Bukavu_1.png";
 import Kampala from "../assets/carImages/Kampala_1.jpg";
-import Dar_City from "../assets/carImages/Dar_City.jpg"
+import Dar_City from "../assets/carImages/Dar_City.jpg";
+import Back_1 from "../assets/carImages/Home_1.jpg";
 
 
 
@@ -89,7 +90,11 @@ const Home = () => {
                          
                          
                     </div>
-                    <h4>We do transportation of goods with in East Africa countries:</h4>
+               </div>
+          </div>
+          <div className="country_sec" style={{backgroundImage: `url(${Back_1})`}} >
+                    <div className="cover"></div>
+                    <h4>We do inland transportation of goods with in East African Countries</h4>
                     <div className="ul">
                          <div className="col">
                               <img src={Kigali} alt="Kigali City" />
@@ -108,7 +113,6 @@ const Home = () => {
                               <li>Tanzania-Dar Es Salam</li>
                          </div>
                     </div>
-               </div>
           </div>
           <div className="trucks_sec">
                <div className="title"><h3>Get the best trucks from United Kingdom</h3></div>

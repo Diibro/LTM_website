@@ -20,9 +20,9 @@ const Footer = () => {
                     <li>Rwanda</li>
                     <li>Kenya</li>
                     <li>Uganda</li>
-                    <li>Nigeria</li>
-                    <li>Algeria</li>
-                    <li>Burundi</li>
+                    <li>United Araba Emirates</li>
+                    <li>United Kingdom</li>
+                    <li>South Korea</li>
                </ul>
           </div>
           <div className="col">
