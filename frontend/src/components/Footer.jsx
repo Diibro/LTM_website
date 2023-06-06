@@ -20,6 +20,7 @@ const Footer = () => {
                     <li>Rwanda</li>
                     <li>Kenya</li>
                     <li>Uganda</li>
+                    <li>DRC</li>
                     <li>United Araba Emirates</li>
                     <li>United Kingdom</li>
                     <li>South Korea</li>
@@ -39,7 +40,7 @@ const Footer = () => {
                <ul>
                     <li>Help</li>
                     <li>Contact us</li>
-                    <li>Call us</li>
+                    <li>Call us:  <a href="tel:+250788303754">0788303754</a></li>
                </ul>
           </div>
      </div>

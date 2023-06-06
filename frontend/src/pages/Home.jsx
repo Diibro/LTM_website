@@ -1,7 +1,7 @@
 //import Home_1 from "../assets/carImages/Home_1.jpg";
 import Home_2 from "../assets/carImages/home_5.jpg";
 import Truck_1 from "../assets/new/home_7.png";
-import Truck_2 from "../assets/carImages/5.png";
+import Truck_2 from "../assets/carImages/truck_2.png";
 import Truck_3 from "../assets/new_images/Truck_2.jpeg";
 import Kigali from "../assets/carImages/Kigali_1.jpg";
 import Bukavu from "../assets/carImages/Bukavu_1.png";
@@ -33,7 +33,7 @@ const Home = () => {
      }, [text])
   return (
     <div className="Home_page">
-          <div className="Hello_sec" style={{backgroundImage: `url(${Home_2})`,}} >
+          <div className="Hello_sec" style={{backgroundImage: `url(${Truck_1})`,}} >
                <div className="Hello_overlay"></div>
                <div className="intro_text">
                     <h3 className="h3_1">{text}</h3>
@@ -66,7 +66,7 @@ const Home = () => {
                                    <img src={Truck_1} alt="Truck_1" />
                               </div>
                               <div className="row text">
-                                   <h5>Shipping of trucks</h5>
+                                   <h5>Shipping and Logistics</h5>
                                    <p>Work with us and get the truck of you choice shipped at your desired destination. We do shipping in the countries:<br/> <b>United Araba Emirates, United Kingdom and South Korea</b></p>
                               </div>
                          </div>
@@ -76,7 +76,7 @@ const Home = () => {
                               </div>
                               <div className="row text">
                                    <h5>Inland Transportation</h5>
-                                   <p>Get your goods devlivered within in East Africa. Wok with the best transportation Company in <br /><b>Tanzania-Dar Es Salam, Rwanda-Kigali, DRC-Bukavu</b></p>
+                                   <p>Get your goods devlivered within in East Africa. Wok with the best transportation Company in <br /><b>Tanzania-Dar Es Salam, Rwanda-Kigali, DRC-Bukavu, DRC-Goma</b></p>
                               </div>
                          </div>
                          
@@ -117,10 +117,10 @@ const Home = () => {
                     </div>
           </div>
           <div className="trucks_sec">
-               <div className="title"><h3>Get the best trucks from United Kingdom</h3><i><AiOutlineArrowRight/></i></div>
-               <div className="title"><h3>Get the best trucks from United Arab Emirates</h3><i><AiOutlineArrowRight/></i></div>
-               <div className="title"><h3>Get best trucks from Belgium</h3><i><AiOutlineArrowRight/></i></div>
-               <div className="title"><h3>Get the best trucks from South Korea</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get the best cars and trucks from United Kingdom</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get the best cars from United Arab Emirates</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get best cars and trucks from Belgium</h3><i><AiOutlineArrowRight/></i></div>
+               <div className="title"><h3>Get the best cars from South Korea</h3><i><AiOutlineArrowRight/></i></div>
           </div>
     </div>
   )

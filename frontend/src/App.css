@@ -207,6 +207,12 @@ body{
      margin: 5px 0;
 }
 
+.Footer_row .col ul li a{
+     color: #0c132b;
+     font-weight: bold;
+     text-decoration: underline;
+}
+
 .Footer_row .col ul li:hover{
      cursor: pointer;
 }
