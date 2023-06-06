@@ -1,6 +1,11 @@
 import Logo from "../assets/levy1ac.png";
+import Chatbox from "./chatBox/chatbox";
 
-const Footer = () => {
+
+const Footer = () => {   
+
+
+
   return (
     <div className="Footer">
      <div className="Footer_row">
@@ -51,6 +56,7 @@ const Footer = () => {
           </div>
           <div  className="col"> </div>
      </div>
+     <Chatbox />
     </div>
   )
 }

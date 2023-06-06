@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
+/* Animations */
 @keyframes rotate{
      from{
           transform: rotateY(0deg);
@@ -70,6 +71,8 @@ body{
      margin: 0;
      overflow-x: hidden;
 }
+
+/* Styling the header*/
 
 .Header{
      width: 100%;
@@ -175,6 +178,9 @@ body{
      justify-content: center;
 }
 
+
+/* Styling the footer*/
+
 .Footer_row{
      align-items: flex-start;
      flex-wrap: wrap;
@@ -232,6 +238,185 @@ body{
 .Footer_down .col p{
      font-size: 0.85rem;
 }
+
+.chat-box{
+     position: fixed;
+     width: 400px;
+     display: flex;
+     flex-direction: column;
+     top: 50%;
+     right: 2%;
+     border-radius: 10px;
+     z-index: 999;
+     box-shadow: 1px 1px 10px gray;
+     display: none;
+     transition: all 1s;
+}
+
+.chat-box .chat-box-header{
+     width: 100%;
+     position: relative;
+     top: 0;
+     background: #003c80;
+     color: white;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 40px;
+
+}
+
+.chat-box .chat-box-header h3{
+     width: 80%;
+     text-align: center;
+     font-size: 20px;
+}
+
+.chat-box .chat-box-header button{
+     width: 7%;
+     font-size: 25px;
+     padding: 0;
+     aspect-ratio: 1/1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     background: transparent;
+     border-radius: 50%;
+}
+
+.chat-box .chat-box-header button:hover{
+     background: rgb(182, 240, 255);
+     color: #003c80;
+     cursor: pointer;
+}
+
+.chat-box .chat-area{
+     width: 100%;
+     background: white;
+     display: flex;
+     flex-direction: column;
+     aspect-ratio: 100/80;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     color: #001724;
+     position: relative;
+     padding: 10px;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+
+.chat-box .chat-area::-webkit-scrollbar{
+     display: none;
+}
+
+.chat-box .chat-area .client-message{
+     position: relative;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: right;
+     align-items: center;
+     padding: 0;
+     margin: 2px 0;
+
+}
+
+.chat-box .chat-area .client-message p{
+     background: #003c80;
+     color: white;
+     padding: 0 5px;
+     border-radius:5px 0 5px 5px;
+     font-size: 18px;
+     margin: 0;
+}
+
+
+.chat-box .chat-area .support-message{
+     position: relative;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: left;
+     align-items: center;
+     padding: 0;
+     margin: 2px 0;
+
+}
+
+.chat-box .chat-area .support-message p{
+     background: rgb(178, 184, 192);
+     color: #003c80;
+     padding: 0 5px;
+     border-radius:0px 5px 5px 5px;
+     font-size: 18px;
+     margin: 0;
+}
+
+.chat-box .input-container{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     background: #003c80;
+
+     padding: 10px;
+
+}
+
+.chat-box .input-container input{
+     width: 80%;
+     padding: 5px;
+     font-size: 18px;
+     box-shadow:1px 1px 10px #003c80;
+     z-index: 1;
+     border-radius: 5px;
+     outline: none;
+}
+
+.chat-box .input-container input:active{
+     outline: none;
+     border: none;
+}
+.chat-box .input-container button{
+     width: 15%;
+     padding: 5px;
+     font-size: 18px;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #003c80;
+}
+
+.chat-box .input-container button:hover{
+     cursor: pointer;
+     font-weight: 600;
+}
+
+.Footer .chat-icon{
+     position: fixed;
+     top: 90%;
+     right: 0;
+     width: 120px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     z-index: 1200;
+     background-color: transparent;
+     color: #003c80;
+     font-size: 60px;
+     transition: all 1s ;
+}
+
+.Footer .chat-icon:hover{
+     cursor: pointer;
+     color: #007180;
+}
+/* Styling the home page */
+
 
 .Home_page{
      width: 100%;
