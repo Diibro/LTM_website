@@ -1,5 +1,4 @@
 //import Home_1 from "../assets/carImages/Home_1.jpg";
-import Home_2 from "../assets/carImages/home_5.jpg";
 import Truck_1 from "../assets/new/home_7.png";
 import Truck_2 from "../assets/carImages/truck_2.png";
 import Truck_3 from "../assets/new_images/Truck_2.jpeg";
@@ -37,8 +36,8 @@ const Home = () => {
                <div className="Hello_overlay"></div>
                <div className="intro_text">
                     <h3 className="h3_1">{text}</h3>
-                    <h3 className="h3_2">The best car deals from United Kingdom and Ireland</h3>
-                    <h3 className="h3_3">Get your favorite truck from Dubai and South Korea</h3>
+                    <h3 className="h3_2">The best car deals from United Emirates, Belgium and South Korea</h3>
+                    <h3 className="h3_3">Get your favorite truck from United Kindom</h3>
                </div>
                <div className="search_container" >
                     <div className="search_list" >
