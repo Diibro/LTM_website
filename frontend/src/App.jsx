@@ -1,17 +1,17 @@
 
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PageContent from './pages/PageContent';
+import AdminMain from './adminPages/adminMain';
 
 function App() {
 
   return (
     <BrowserRouter>
-      <Header />
-      <PageContent/>
-      <Footer />
+      <Routes>
+        <Route index path='/*' element={<PageContent/>} />
+        <Route path="/admin/*" element={<AdminMain/>} />
+      </Routes>
     </BrowserRouter>
   )
 }

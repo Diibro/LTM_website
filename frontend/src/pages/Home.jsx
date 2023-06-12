@@ -11,10 +11,6 @@ import Back_1 from "../assets/carImages/Home_1.jpg";
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
 
-
- 
-import { useEffect, useState } from "react";
-
 import Slider from "../components/slider/slider";
 import {NavLink} from "react-router-dom";
 
@@ -22,21 +18,14 @@ import {NavLink} from "react-router-dom";
 
 const Home = () => {
 
-     const [text, setText] = useState("The best Transport Agency in East Africa");
-     useEffect(( ) => {
-          var count = 0;
-          if(count === 5){
-               setText("The best car deals from United Kingdom and Ireland");
-          }
-          count++;
-     }, [text])
   return (
     <div className="Home_page">
+          <Slider/>
           <div className="Hello_sec" style={{backgroundImage: `url(${Truck_1})`,}} >
                <div className="Hello_overlay"></div>
                <div className="intro_text">
-                    <h3 className="h3_1">{text}</h3>
-                    <h3 className="h3_2">The best car deals from United Emirates, Belgium and South Korea</h3>
+                    <h3 className="h3_1">The best Transport Agency in East Africa</h3>
+                    <h3 className="h3_2">The best car dealers from United Emirates, Belgium and South Korea</h3>
                     <h3 className="h3_3">Get your favorite truck from United Kindom</h3>
                </div>
                <div className="search_container" >
@@ -55,7 +44,6 @@ const Home = () => {
                     </div>
                </div>
           </div>
-          <Slider/>
           <div className="about_sec">
                <div className="about_para">
                     <h4>At Levy Trading Motors we provide</h4>

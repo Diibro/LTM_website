@@ -11,7 +11,7 @@ const Header = () => {
     <div className="Header">
      <div className="Header__row">
           <div className="logo_container">
-               <img src={Logo} alt="company_logo"/>
+               <NavLink to="/"><img src={Logo} alt="company_logo"/></NavLink>
           </div>
           <div className="signIn_container">
                <button>Login or Sign up</button>
