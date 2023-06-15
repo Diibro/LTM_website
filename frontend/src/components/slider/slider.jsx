@@ -26,7 +26,7 @@ const Slider = () =>{
                     </Slide>
                     <Slide Num={2} >
                          <div className="text">
-                              <h5>At Levy Trading Motors, we understand that your time is valuable. </h5>
+                              <h5>Levy Trading Motors, we understand that your time is valuable. </h5>
                               <p>We strive to make your experience with us as seamless as possible.Whether you are searching for a new or pre-owned vehicle, or are in need of comprehensive logistics solutions, our team of skilled professionals is here to assist.</p>
                          </div>
                     </Slide>

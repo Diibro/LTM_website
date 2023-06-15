@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import Logo from "../assets/levy1ac.png";
 import Chatbox from "./chatBox/chatbox";
+import {FaPhoneSquareAlt} from 'react-icons/fa';
 
 
 const Footer = () => {   
@@ -45,7 +46,7 @@ const Footer = () => {
                <ul>
                     <li><NavLink to="/get_help">Help</NavLink></li>
                     <li><NavLink to="/contact_us">Contact Us</NavLink></li>
-                    <li>Call us:  <a href="tel:+250788303754">+250788303754</a></li>
+                    <li className="phone-container"><i className="phone"><FaPhoneSquareAlt/> </i><a href="tel:+250788303754">+250788303754</a></li>
                </ul>
           </div>
      </div>

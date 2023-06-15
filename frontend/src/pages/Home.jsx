@@ -21,32 +21,38 @@ const Home = () => {
   return (
     <div className="Home_page">
           <Slider/>
-          <div className="Hello_sec" style={{backgroundImage: `url(${Truck_1})`,}} >
-               <div className="Hello_overlay"></div>
-               <div className="intro_text">
-                    <h3 className="h3_1">The best Transport Agency in East Africa</h3>
-                    <h3 className="h3_2">The best car dealers from United Emirates, Belgium and South Korea</h3>
-                    <h3 className="h3_3">Get your favorite truck from United Kindom</h3>
-               </div>
-               <div className="search_container" >
-                    <div className="search_list" >
-                         <h3>Searching in</h3>
-                         <ul>
-                              <li><NavLink to="/">All</NavLink></li>
-                              <li><NavLink to="/">Logistics</NavLink></li>
-                              <li><NavLink to="/">Car Deals</NavLink></li>
-                              <li><NavLink to="/">Trucks</NavLink></li>
-                         </ul>
+          <div className="Hello_sec-container">
+               <div className="Hello_sec" style={{backgroundImage: `url(${Truck_1})`,}} >
+                    <div className="Hello_overlay"></div>
+                    <div className="intro_text">
+                         <h3 className="h3_1">The best Transport Agency in East Africa</h3>
+                         <h3 className="h3_2">The best car dealers from United Emirates, Belgium and South Korea</h3>
+                         <h3 className="h3_3">Get your favorite truck from United Kindom</h3>
                     </div>
-                    <div className="search_form" >
-                         <input type="text" placeholder="Search anything" />
-                         <button>Search</button>
+                    <div className="search_container" >
+                         <div className="search_list" >
+                              <h3>Searching in</h3>
+                              <ul>
+                                   <li><NavLink to="/">All</NavLink></li>
+                                   <li><NavLink to="/">Logistics</NavLink></li>
+                                   <li><NavLink to="/">Motors</NavLink></li>
+                                   <li><NavLink to="/">Transport</NavLink></li>
+                              </ul>
+                         </div>
+                         <div className="search_form" >
+                              <input type="text" placeholder="Search anything" />
+                              <button>Search</button>
+                         </div>
                     </div>
                </div>
           </div>
           <div className="about_sec">
                <div className="about_para">
-                    <h4>At Levy Trading Motors we provide</h4>
+                    <div className="back_text">
+                         <h2>Our Services</h2>
+                         <h4>Our Services</h4>
+                    </div>
+                    
                     <div className="ul">
                          <div className="col">
                               <div className="row">
