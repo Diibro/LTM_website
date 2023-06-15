@@ -53,10 +53,11 @@ const Footer = () => {
      <div className="Footer_row Footer_down">
           <div className="col">
                <img src={Logo} alt="company_logo" />
-               <p>&#169; levytradingmotors.co.uk All rights reserved.</p>
+               
           </div>
           <div  className="col"> </div>
      </div>
+     <p>&#169; levytradingmotors.co.uk <br /> All rights reserved.</p>
      <Chatbox />
     </div>
   )

@@ -116,7 +116,7 @@ a{
 }
 
 body{
-     width: 100%;
+     width: 100vw;
      padding: 0;
      margin: 0;
      overflow-x: hidden;
@@ -131,6 +131,7 @@ body{
 
 .Header{
      position: sticky;
+     box-sizing: border-box;
      top:0;
      width: 100%;
      display: flex;
@@ -139,10 +140,13 @@ body{
      justify-content: center;
      z-index:1500;
      background:white;
+     overflow: hidden;
 }
 
 .Header__row, .Footer_row{
-     width: clamp(400px, 70%, 1400px);
+     margin: 0;
+     padding: 0;
+     width: clamp(360px, 70%, 1400px);
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -152,7 +156,7 @@ body{
 
 
 .logo_container, .signIn_container{
-     width: clamp(190px, 20%, 300px);
+     width: clamp(150px, 20%, 300px);
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -160,7 +164,7 @@ body{
 }
 
 .signIn_container button{
-     width: clamp(150px, 60%, 200px);
+     width: clamp(120px, 60%, 200px);
      aspect-ratio: 100/25;
      font-size: 0.8rem;
      font-weight:500;
@@ -252,7 +256,7 @@ body{
 }
 
 .Footer_row .col{
-     width: clamp(190px, 20%, 300px);
+     width: clamp(150px, 20%, 300px);
 }
 
 .Footer_row .col h3{
@@ -313,6 +317,11 @@ body{
 }
 
 .Footer_down .col p{
+     font-size: 0.85rem;
+}
+
+.Footer p{
+     text-align: center;
      font-size: 0.85rem;
 }
 
@@ -1158,7 +1167,7 @@ body{
      }
 
      .company_sec .slide .text{
-          padding: 15% 0 30%;
+          padding: 5% 0 40%;
      }
 
      .Home_page .about_sec .back_text h2{
@@ -1167,6 +1176,14 @@ body{
 
      .Home_page .about_sec .back_text h4 {
           top: 0%;
+     }
+     .company_sec {
+          background-position: top;
+     }
+
+     .chat-box{
+          top: 40%;
+          right: 10%;
      }
 }
 
