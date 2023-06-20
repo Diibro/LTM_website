@@ -330,8 +330,9 @@ body{
      width: 400px;
      display: flex;
      flex-direction: column;
-     top: 50%;
-     right: 2%;
+     /*top: 50%; */
+     bottom: 1%;
+     right: 0.5%;
      border-radius: 10px;
      z-index: 999;
      box-shadow: 1px 1px 10px gray;
@@ -483,7 +484,7 @@ body{
 
 .Footer .chat-icon{
      position: fixed;
-     top: 90%;
+     bottom: 5%;
      right: 0;
      width: 120px;
      display: flex;
@@ -510,7 +511,7 @@ body{
      flex-direction: column;
      align-items: center;
      justify-content:center ;
-     padding: 0 0;
+     padding: 20px 0;
 
 }
 
@@ -521,13 +522,12 @@ body{
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     aspect-ratio: 100/10;
 
 }
 
 .Home_page .Hello_sec{
      position: relative;
-     top: -50%;
+     top: 0;
      width: clamp(400px, 70%, 1400px);
      aspect-ratio: 100/30;
      background-repeat: no-repeat;
@@ -678,6 +678,91 @@ body{
      transition: all 0.5s;
 }
 
+.Home_page .categories{
+     width: clamp(380px, 70%, 1600px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 20px 0 0;
+}
+
+.Home_page .categories h3{
+     width: 100%;
+     font-size: 1.3rem;
+     font-weight: bold;
+     margin: 0;
+     color: #003c80;
+}
+
+.Home_page .categories .row{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+}
+
+.Home_page .categories .row .col{
+     width: clamp(170px, 19%, 350px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+}
+
+.Home_page .categories .row .col .title{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: left;
+     color: #003c80;
+     font-size: 1.2rem;
+}
+
+.Home_page .categories .row .col .title i{
+     margin-right: 5px;
+}
+
+.Home_page .categories .row .col .title h4{
+     color: #001724;
+     font-size: 0.9rem;
+     margin: 0;
+}
+
+.Home_page .categories .row .col .title img{
+     width: 30px;
+     margin-right: 5px;
+}
+
+.Home_page .categories .row .col .list{
+     width: 85%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+}
+
+.Home_page .categories .row .col .list a{
+     font-size: 16px;
+     color: #001724;
+     transition: all 0.5s;
+     display: flex;
+     align-items: center;
+}
+
+.Home_page .categories .row .col .list a:hover{
+     color: #003c80;
+     text-decoration: underline;
+     font-weight: bold;
+}
+
+.Home_page .categories .row .col .list a img{
+     width: 20px;
+     margin-right: 5px;
+}
+
 .search_container .search_form button:hover{
      cursor: pointer;
      background: #003c8093;
@@ -735,24 +820,35 @@ body{
 }
 
 .Home_page .about_sec .about_para .ul .col{
-     width: clamp(390px, 25%, 600px);
+     width: clamp(380px, 25%, 500px);
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      box-shadow: 1px 1px 10px rgb(211, 209, 209);
      overflow: hidden;
+     border-radius: 10px;
 }
 
 .Home_page .about_sec .about_para .ul .col .row{
      width: 100%;
 }
 
+.Home_page .about_sec .about_para .ul .col .img{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 0 0 ;
+}
+
 .Home_page .about_sec .about_para .ul .col .row img{
-     width: 100%;
+     width: 95%;
+     margin: auto;
      aspect-ratio: 100/60;
      box-shadow: 2px 1px 5px #afaaaa;
      transition: all 1s;
+     border-radius: 5px;
 }
 
 .Home_page .about_sec .about_para .ul .col .text{
@@ -765,7 +861,7 @@ body{
      text-align: center;
      background: #003c80;
      color: white;
-     
+     border-radius: 5px;
 }
 
 .Home_page .about_sec .about_para .ul .col .row p{
@@ -778,10 +874,51 @@ body{
 }
 
 .Home_page .about_sec .about_para .ul .col img:hover{
-     transform: scale3d(1.2, 1.2, 1.2);
      cursor: pointer;
      box-shadow: none;
 }
+
+.Home_page .about_sec .about_para .more-sec{
+     width: clamp(300px, 100%, 1600px);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: right;
+     padding: 20px 20px 0;
+}
+
+.Home_page .about_sec .about_para .more-sec a{
+     color: #003c80;
+     font-size: 1.1rem;
+     width: clamp(250px, 30%, 400px);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: right;
+     font-weight: bold;
+}
+
+.Home_page .about_sec .about_para .more-sec a i{
+     width: 10%;
+     aspect-ratio: 1/1;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background: #003c80;
+     color: white;
+     margin: 0 0 0 5px;
+     border-radius: 50%;
+     transition: all 0.5s;
+}
+
+.Home_page .about_sec .about_para .more-sec a i:hover{
+     background-color: white;
+     color: #003c80;
+     width: 12%;
+     font-size: 1.3rem;
+}
+
 
 .company_sec{
      position: relative;
@@ -918,7 +1055,7 @@ body{
 
 .country_sec .ul .col{
      position: relative;
-     width: clamp(150px, 25%, 400px);
+     width: clamp(150px, 18%, 300px);
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -952,6 +1089,37 @@ body{
      margin: 5px 0;
      padding:0 10px;
      transition: all 0.5s;
+}
+
+.country_sec .contact-sec{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     z-index: 1;
+}
+
+
+.country_sec .contact-sec a{
+     width: clamp(100px, 10%, 150px);
+     background-color: white;
+     color:#003c80;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1rem;
+     font-weight: bold;
+     border-radius: 10px;
+     margin: 10px 0 0;
+     transition: all 1s;
+     padding:  5px 0;
+}
+
+.country_sec .contact-sec a:hover{
+     width: 12%;
+     font-size: 1.1rem;
+     cursor: pointer;
 }
 
 .trucks_sec{
@@ -1181,10 +1349,7 @@ body{
           background-position: top;
      }
 
-     .chat-box{
-          top: 40%;
-          right: 10%;
-     }
+     
 }
 
 .rotate_globe{

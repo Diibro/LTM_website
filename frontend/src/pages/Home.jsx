@@ -7,11 +7,19 @@ import Bukavu from "../assets/carImages/Bukavu_1.png";
 import Kampala from "../assets/carImages/Kampala_1.jpg";
 import Dar_City from "../assets/carImages/Dar_City.jpg";
 import Back_1 from "../assets/carImages/Home_1.jpg";
+import Goma from "../assets/carImages/Goma.jpg";
 
-import {AiOutlineArrowRight} from 'react-icons/ai'
+
+import {AiOutlineArrowRight} from 'react-icons/ai';
+import {BiChevronsRight} from 'react-icons/bi';
+import {FaCar, FaTruck, FaTruckLoading} from 'react-icons/fa';
+// import {BsArrowRight} from 'react-icons/bs';
+
+import Benz from '../assets/car logos/benz_1.ico';
+import Scania from '../assets/car logos/scania_1.png';
+import Logistic from '../assets/car logos/logitstics_1.png'
 
 
-import Slider from "../components/slider/slider";
 import {NavLink} from "react-router-dom";
 
 
@@ -20,14 +28,13 @@ const Home = () => {
 
   return (
     <div className="Home_page">
-          <Slider/>
           <div className="Hello_sec-container">
                <div className="Hello_sec" style={{backgroundImage: `url(${Truck_1})`,}} >
                     <div className="Hello_overlay"></div>
                     <div className="intro_text">
-                         <h3 className="h3_1">The best Transport Agency in East Africa</h3>
-                         <h3 className="h3_2">The best car dealers from United Emirates, Belgium and South Korea</h3>
-                         <h3 className="h3_3">Get your favorite truck from United Kindom</h3>
+                         <h3 className="h3_1">Welcome to Levy Trading Motors</h3>
+                         <h3 className="h3_2">The best Transport Agency in East Africa and Africa</h3>
+                         <h3 className="h3_3">The best car dealers from United Emirates, Belgium and South Korea</h3>
                     </div>
                     <div className="search_container" >
                          <div className="search_list" >
@@ -46,6 +53,47 @@ const Home = () => {
                     </div>
                </div>
           </div>
+          <div className="categories">
+               <h3>Popular Categories</h3>
+               <div className="row">
+                    <div className="col">
+                         <div className="title"><i><FaCar/></i><h4>Motors</h4></div>
+                         <div className="list">
+                              <NavLink>Brand New Cars</NavLink>
+                              <NavLink>Used cars for sale</NavLink>
+                              <NavLink>Hybrid cars</NavLink>
+                              <NavLink>Automatic cars</NavLink>
+                              <NavLink>All</NavLink>
+                         </div>
+                    </div>
+                    <div className="col">
+                         <div className="title"><i><FaTruck/></i><h4>Trucks</h4></div>
+                         <div className="list">
+                              <NavLink><img src={Benz} alt="Benz Icon" /> Mercedes Benz</NavLink>
+                              <NavLink><img src={Scania} alt="Scania Icon" /> Scania</NavLink>
+                              <NavLink>All</NavLink>
+                         </div>
+                    </div>
+                    <div className="col">
+                         <div className="title"><i><FaTruckLoading/></i><h4>Inland Transportation</h4></div>
+                         <div className="list">
+                              <NavLink>Countries</NavLink>
+                              <NavLink>Destinations</NavLink>
+                              <NavLink>Vehicles</NavLink>
+                              <NavLink>All</NavLink>
+                         </div>
+                    </div>
+                    <div className="col">
+                         <div className="title"><img src={Logistic} alt="Logistic" /><h4>Logistics</h4></div>
+                         <div className="list">
+                              <NavLink>Locations</NavLink>
+                              <NavLink>Destinations</NavLink>
+                              <NavLink>Vehicles</NavLink>
+                              <NavLink>All</NavLink>
+                         </div>
+                    </div>
+               </div>
+          </div>
           <div className="about_sec">
                <div className="about_para">
                     <div className="back_text">
@@ -55,7 +103,7 @@ const Home = () => {
                     
                     <div className="ul">
                          <div className="col">
-                              <div className="row">
+                              <div className="row img">
                                    <img src={Truck_1} alt="Truck_1" />
                               </div>
                               <div className="row text">
@@ -64,7 +112,7 @@ const Home = () => {
                               </div>
                          </div>
                          <div className="col">
-                              <div className="row">
+                              <div className="row img">
                                    <img src={Truck_2} alt="Truck_2" />
                               </div>
                               <div className="row text">
@@ -74,7 +122,7 @@ const Home = () => {
                          </div>
                          
                          <div className="col">
-                              <div className="row">
+                              <div className="row img">
                                    <img src={Truck_3} alt="Truck_3" />
                               </div>
                               <div className="row text">
@@ -83,6 +131,10 @@ const Home = () => {
                               </div>
                          </div>
                          
+                         
+                    </div>
+                    <div className="more-sec">
+                         <NavLink>More <i><BiChevronsRight /></i></NavLink>
                          
                     </div>
                </div>
@@ -100,13 +152,21 @@ const Home = () => {
                               <li>DRC-Bukavu</li>
                          </div>
                          <div className="col">
+                              <img src={Goma} alt="Bukavu" />
+                              <li>DRC-Goma</li>
+                         </div>
+                         <div className="col">
                               <img src={Kampala} alt="Kampala City" />
                               <li>Uganda-Kampala</li>
                          </div>
                          <div className="col">
                               <img src={Dar_City} alt="Dar Es Salam" />
-                              <li>Tanzania-Dar Es Salam</li>
+                              <li>Tz-Dar Es Salam</li>
                          </div>
+                    </div>
+                    <div className="contact-sec">
+                         <NavLink>Get started</NavLink>
+                         
                     </div>
           </div>
           <div className="trucks_sec">
