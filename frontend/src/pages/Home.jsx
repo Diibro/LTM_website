@@ -20,11 +20,28 @@ import Scania from '../assets/car logos/scania_1.png';
 import Logistic from '../assets/car logos/logitstics_1.png'
 
 
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+import {useRef, useContext} from 'react';
+import { Searched } from "../Context/SearchContext";
+
+import { Sec_1 } from "../components/Free_sec/Free_sec";
+
 
 
 
 const Home = () => {
+     const  [searched,setSearched] = useContext(Searched);
+
+     const searchRef = useRef();
+     const navigate = useNavigate();
+
+     const handleSubmit = () => {
+          if(searchRef.current.value != ""){
+               searchRef.current.value = "";
+               navigate('/search')
+          }
+     }
+
 
   return (
     <div className="Home_page">
@@ -40,15 +57,15 @@ const Home = () => {
                          <div className="search_list" >
                               <h3>Searching in</h3>
                               <ul>
-                                   <li><NavLink to="/">All</NavLink></li>
-                                   <li><NavLink to="/">Logistics</NavLink></li>
-                                   <li><NavLink to="/">Motors</NavLink></li>
-                                   <li><NavLink to="/">Transport</NavLink></li>
+                                   <li><NavLink activeClassName="activeSearch" to="/" onClick={() => setSearched((prev) => ({...prev, searchType: "All"}))}>All</NavLink></li>
+                                   <li><NavLink activeClassName="activeSearch" to="/" onClick={() => setSearched((prev) => ({...prev, searchType: "Logistics"}))}>Logistics</NavLink></li>
+                                   <li><NavLink activeClassName="activeSearch" to="/" onClick={() => setSearched((prev) => ({...prev, searchType: "Motors"}))}>Motors</NavLink></li>
+                                   <li><NavLink activeClassName="activeSearch" to="/" onClick={() => setSearched((prev) => ({...prev, searchType: "Transport"}))}>Transport</NavLink></li>
                               </ul>
                          </div>
                          <div className="search_form" >
-                              <input type="text" placeholder="Search anything" />
-                              <button>Search</button>
+                              <input ref={searchRef} type="text" placeholder="Search anything" onChange={(e) => setSearched((prev) => ({...prev, search: e.target.value}))} />
+                              <button onClick={handleSubmit}>Search</button>
                          </div>
                     </div>
                </div>
@@ -94,6 +111,7 @@ const Home = () => {
                     </div>
                </div>
           </div>
+          <Sec_1 />
           <div className="about_sec">
                <div className="about_para">
                     <div className="back_text">

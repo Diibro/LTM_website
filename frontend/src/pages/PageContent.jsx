@@ -7,10 +7,12 @@ import Contact_us from "./Contact_us";
 import Help from "./Help";
 import PrivacyPolicy from "./PrivacyPolicy";
 import UsageTerms from "./UsageTerms";
+import SearchContext from "../Context/SearchContext";
+import SearchPage from "./SearchPage";
 
 const PageContent = () => {
   return (
-    <>
+    <SearchContext>
       <Header />
       <Routes>
         <Route index path="/" element={<Home />}/>
@@ -19,10 +21,11 @@ const PageContent = () => {
         <Route path="/get_help" element={<Help/>} />
         <Route path="/privacy_policy" element={<PrivacyPolicy/>}  />
         <Route path="/terms_of_use" element={<UsageTerms/>}/>
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
       <Footer />
-    </>
+    </SearchContext>
   )
 }
 
-export default PageContent
+export default PageContent;
