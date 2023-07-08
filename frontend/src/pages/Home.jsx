@@ -9,6 +9,14 @@ import Dar_City from "../assets/carImages/Dar_City.jpg";
 import Back_1 from "../assets/carImages/Home_1.jpg";
 import Goma from "../assets/carImages/Goma.jpg";
 
+import RwandaF from '../assets/Flags/RwandaF.jpeg';
+import BurundiF from '../assets/Flags/BurundiF.png';
+import FranceF from '../assets/Flags/FranceF.png';
+import RDCF from '../assets/Flags/RDCF.png';
+import SouthKF from '../assets/Flags/SouthKF.png';
+import TzF from '../assets/Flags/TzF.png';
+import DubaiF from '../assets/Flags/DubaiF.png';
+
 
 import {AiOutlineArrowRight} from 'react-icons/ai';
 import {BiChevronsRight} from 'react-icons/bi';
@@ -27,6 +35,28 @@ import { Searched } from "../Context/SearchContext";
 import { Sec_1 } from "../components/Free_sec/Free_sec";
 
 
+const Cars = [
+     {
+          name: "Toyota Prius",
+          price: "7,000,000",
+          imageUrl: ""
+     },
+     {
+          name: "Rava4",
+          price: "15,000,000",
+          imageUrl: ""
+     },
+     {
+          name: "Tesla",
+          price: "30,000,000",
+          imageUrl: ""
+     },
+     {
+          name: "Toyota Hybrid",
+          price: "12,000,000",
+          imageUrl: ""
+     },
+];
 
 
 const Home = () => {
@@ -51,7 +81,7 @@ const Home = () => {
                     <div className="intro_text">
                          <h3 className="h3_1">Welcome to Levy Trading Motors</h3>
                          <h3 className="h3_2">The best Transport Agency in East Africa and Africa</h3>
-                         <h3 className="h3_3">The best car dealers from United Emirates, Belgium and South Korea</h3>
+                         <h3 className="h3_3">The best car dealers from United Arab Emirates, Belgium and South Korea</h3>
                     </div>
                     <div className="search_container" >
                          <div className="search_list" >
@@ -157,29 +187,75 @@ const Home = () => {
                     </div>
                </div>
           </div>
-          <div className="country_sec" style={{backgroundImage: `url(${Back_1})`}} >
-                    <div className="cover"></div>
-                    <h4>We do inland transportation of goods with in East African Countries</h4>
-                    <div className="ul">
+          <div className="country_sec"  >
+                    <h2>Our Offices</h2>
+                    <div className="offices">
                          <div className="col">
-                              <img src={Kigali} alt="Kigali City" />
-                              <li>Rwanda-Kigali</li>
+                              <div className="row">
+                                   <img src={RwandaF} alt="" />
+                                   <p>
+                                        <b>Rwanda</b>: Levy Trading Motors Ltd <br />
+                                        Rwanda-kigali, P.O Box 1184 Kigali <br />
+                                        KN 3Rd, Le Prestige House, Ground Floor F06 <br />
+                                        <b>Tel</b>: <a href="tel:+250788303754">+250 788-303-754</a>
+                                   </p>
+                              </div>
+                              <div className="row">
+                                   <img src={BurundiF} alt="" />
+                                   <p>
+                                        <b>Burundi</b>: Commune Mukaza, Zone Rohero <br />
+                                        Avenue des Euphorbes No 8 <br />
+                                        <b>Tel</b>: <a href="tel:+25771685307">+257 71 68 5307</a>
+                                   </p>
+                              </div>
+                              <div className="row">
+                                   <img src={SouthKF} alt="" />
+                                   <p>
+                                        <b>South Korea</b>: Levy Trading Motors Ltd <br />
+                                        South Korea <br />
+                                        <b>Tel</b>: <a href="tel:+821081208573">+82 10-8120-8573</a>
+                                   </p>
+                              </div>
+                              <div className="row">
+                                   <img src={DubaiF} alt="" />
+                                   <p>
+                                        <b>Dubai</b>: Rashidia. Umm Ramool <br />
+                                        P.O Box 238479, Emirates <br />
+                                        <b>Tel</b>: <a href="tel:+971582503369">+97 15-82-50-3369</a> <br />
+                                        <b>Whatsapp</b>: <a href="https://wa.me/+971556150861">+97 15-56-15-0861</a>
+                                   </p>
+                              </div>
+                              
                          </div>
                          <div className="col">
-                              <img src={Bukavu} alt="Bukavu" />
-                              <li>DRC-Bukavu</li>
-                         </div>
-                         <div className="col">
-                              <img src={Goma} alt="Bukavu" />
-                              <li>DRC-Goma</li>
-                         </div>
-                         <div className="col">
-                              <img src={Kampala} alt="Kampala City" />
-                              <li>Uganda-Kampala</li>
-                         </div>
-                         <div className="col">
-                              <img src={Dar_City} alt="Dar Es Salam" />
-                              <li>Tz-Dar Es Salam</li>
+                         <div className="row">
+                                   <img src={FranceF} alt="" />
+                                   <p>
+                                        <b>France</b>: Residence des Sources, 4eme Etage No 2 <br />
+                                        16 Rue des Sources Saint Genis Laval 69230, France <br />
+                                        <b>Tel</b>: <a href="tel:+33776173877">+33 77-61-73877</a>
+                                   </p>
+                              </div>
+                              <div className="row">
+                                   <img src={RDCF} alt="" />
+                                   <p>
+                                        <b>R.D Congo - Goma</b>: Rond-point Chukudu vers Papirus au Galerie Mbaga, Q les Volcans <br />
+                                        Av. Touriste en face de la Regideso en Diagonale avec DGi <br />
+                                        <b>Tel</b>: <a href="tel:+243970323638">+243 970-323-638</a> <br />
+                                        <b>R.D Congo - Bukavu</b>: Ville de Bukavu <br />
+                                        Commune D&apos;ibanda, Avenue Manilema Numero 74 <br />
+                                        <b>Tel</b>: <a href="tel:+243992119239">+243 992-119-239</a>
+                                   </p>
+                              </div>
+                              <div className="row">
+                                   <img src={TzF} alt="" />
+                                   <p>
+                                        <b>Tanzania</b>: PPF Tower, 14th Floor Garden Ave <br />
+                                        House No 10, PLot No. 70 Block C <br />
+                                        P.O Box 31704 <br />
+                                        <b>Tel</b>: <a href="tel:+255784368358">+255 784-368-358</a>
+                                   </p>
+                              </div>
                          </div>
                     </div>
                     <div className="contact-sec">

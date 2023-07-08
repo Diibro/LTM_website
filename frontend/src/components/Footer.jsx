@@ -55,7 +55,6 @@ const Footer = () => {
                <img src={Logo} alt="company_logo" />
                
           </div>
-          <div  className="col"> </div>
      </div>
      <p>&#169; levytradingmotors.co.uk <br /> All rights reserved.</p>
      <Chatbox />

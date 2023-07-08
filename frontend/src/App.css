@@ -348,11 +348,14 @@ body{
 }
 
 .Footer_down{
-     justify-content: space-between;
+     justify-content: center;
 }
 
 .Footer_down .col{
      width: clamp(190px, 45%, 500px);
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
 }
 
 .Footer_down .col img{
@@ -559,6 +562,7 @@ body{
      padding: 0;
      margin-top: 20px;
      box-shadow: 1px 1px 5px #003c8070;
+     margin-top: 50px;
 }
 
 .get-Started .col_1{
@@ -820,7 +824,7 @@ body{
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     margin: 20px 0 0;
+     margin: 50px 0 0;
 }
 
 .Home_page .categories h3{
@@ -1155,78 +1159,61 @@ body{
      align-items: center;
      justify-content: center;
      overflow: hidden;
-     background: #001724;
-     background-repeat: no-repeat;
-     background-position: center;
+     background-color: #eff4f5;
      margin: 30px 0;
-     color: white;
      background-size: 100%;
-     padding: 30px 0;
+     padding: 20px 0;
 }
 
-.country_sec .cover{
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top: 0;
-     background: #05213169;
-     z-index: 0;
-}
 
-.country_sec h4{
+
+.country_sec h2{
      width: 80%;
      z-index: 1;
+     color: #001724;
 }
 
-.country_sec .ul{
-     z-index: 1;
-     width: 80%;
-     display: flex;
+.country_sec .offices{
+     width: clamp(380px, 80%, 1600px);
+     display:flex;
      flex-direction: row;
-     flex-wrap: wrap;
      align-items: center;
-     justify-content:center ;
-     list-style: none;
+     justify-content: space-between;
+     flex-wrap: wrap;
 }
 
-.country_sec .ul .col{
-     position: relative;
-     width: clamp(150px, 18%, 300px);
+.country_sec .offices .col{
+     width: clamp(380px, 45%, 800px);
      display: flex;
      flex-direction: column;
-     align-items: center;
-     justify-content: space-evenly;
-     transition: all 1s;
+     align-items: flex-start;
+     justify-content: flex-start;
 }
 
-.country_sec .ul .col:hover{
-     cursor: pointer;
-     transform: scale(1.2);
+.country_sec .offices .col .row{
+     display: flex;
+     width: 95%;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: left;
+     margin: 10px 0;
 }
 
-.country_sec .ul .col:hover li{
-     position: absolute;
-     cursor: pointer;
-     top:50%;
-}
-
-.country_sec .ul .col img{
-     width: 80%;
+.country_sec .offices .col .row img{
+     width: 40px;
      aspect-ratio: 1/1;
      border-radius: 50%;
-     box-shadow: 1px 1px 10px gray;
 }
 
-.country_sec .ul .col li{
-     position: relative;
-     font-size: 0.8rem;
-     font-weight: 600;
-     background: #003c8073;
-     margin: 5px 0;
-     padding:0 10px;
-     transition: all 0.5s;
+.country_sec .offices .col .row p{
+     margin: 0 10px;
+     font-size: 16px;
+     letter-spacing: 0.56px;
 }
 
+.country_sec .offices .col .row p a{
+     color: #001724;
+}
 .country_sec .contact-sec{
      width: 100%;
      display: flex;
@@ -1234,13 +1221,17 @@ body{
      align-items: center;
      justify-content: center;
      z-index: 1;
+     transition: all 0.5s;
 }
 
-
+.country_sec .offices .col .row p a:hover{
+     color:#003c80;
+     font-weight: bold;
+}
 .country_sec .contact-sec a{
      width: clamp(100px, 10%, 150px);
-     background-color: white;
-     color:#003c80;
+     background-color: #003c80;
+     color:white;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -1256,6 +1247,9 @@ body{
      width: 12%;
      font-size: 1.1rem;
      cursor: pointer;
+     border: 2px solid #003c80;
+     color: #003c80;
+     background-color: white;
 }
 
 .trucks_sec{
