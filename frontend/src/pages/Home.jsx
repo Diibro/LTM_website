@@ -16,6 +16,8 @@ import RDCF from '../assets/Flags/RDCF.png';
 import SouthKF from '../assets/Flags/SouthKF.png';
 import TzF from '../assets/Flags/TzF.png';
 import DubaiF from '../assets/Flags/DubaiF.png';
+import UnitedKingF from '../assets/Flags/UnitedKingF.png';
+import BelgiumF from '../assets/Flags/BelgiumF.png'
 
 
 import {AiOutlineArrowRight} from 'react-icons/ai';
@@ -192,6 +194,13 @@ const Home = () => {
                     <div className="offices">
                          <div className="col">
                               <div className="row">
+                                   <img src={BelgiumF} alt="" />
+                                   <p>
+                                        <b>Begium</b>: CMS DeBacker. Chaussée de La Hulpe 178. 1170 Brussels, Belgium <br />
+                                        <b>Tel</b> <a href="tel:+32 2 743 69 00">+32 2 743 69 00</a>
+                                   </p>
+                              </div>
+                              <div className="row">
                                    <img src={RwandaF} alt="" />
                                    <p>
                                         <b>Rwanda</b>: Levy Trading Motors Ltd <br />
@@ -205,7 +214,7 @@ const Home = () => {
                                    <p>
                                         <b>Burundi</b>: Commune Mukaza, Zone Rohero <br />
                                         Avenue des Euphorbes No 8 <br />
-                                        <b>Tel</b>: <a href="tel:+25771685307">+257 71 68 5307</a>
+                                        <b>Tel</b>: <a href="tel:+25771785367">+257 71 68 5307</a>
                                    </p>
                               </div>
                               <div className="row">
@@ -221,13 +230,20 @@ const Home = () => {
                                    <p>
                                         <b>Dubai</b>: Rashidia. Umm Ramool <br />
                                         P.O Box 238479, Emirates <br />
-                                        <b>Tel</b>: <a href="tel:+971582503369">+97 15-82-50-3369</a> <br />
-                                        <b>Whatsapp</b>: <a href="https://wa.me/+971556150861">+97 15-56-15-0861</a>
+                                        <b>Tel</b>: <a href="tel:+971 58 960 2868">+971 58 960 2868</a> <br />
+                                        <b>Whatsapp</b>: <a href="https://wa.me/+971 58 856 1442">+971 58 856 1442</a>
                                    </p>
                               </div>
                               
                          </div>
                          <div className="col">
+                              <div className="row">
+                                   <img src={UnitedKingF} alt="" />
+                                   <p>
+                                        <b>United Kingdom</b>: 24 Victoria Road SHEFFIELD S85 6XP
+                                        <b>Tel</b>: <a href="+44 808 157 0145">+44 808 157 0145</a>
+                                   </p>
+                              </div>
                          <div className="row">
                                    <img src={FranceF} alt="" />
                                    <p>
@@ -241,10 +257,10 @@ const Home = () => {
                                    <p>
                                         <b>R.D Congo - Goma</b>: Rond-point Chukudu vers Papirus au Galerie Mbaga, Q les Volcans <br />
                                         Av. Touriste en face de la Regideso en Diagonale avec DGi <br />
-                                        <b>Tel</b>: <a href="tel:+243970323638">+243 970-323-638</a> <br />
+                                        <b>Tel</b>: <a href="tel:+243970323378">+243 970-323-378</a> <br />
                                         <b>R.D Congo - Bukavu</b>: Ville de Bukavu <br />
                                         Commune D&apos;ibanda, Avenue Manilema Numero 74 <br />
-                                        <b>Tel</b>: <a href="tel:+243992119239">+243 992-119-239</a>
+                                        <b>Tel</b>: <a href="tel:+243992119438">+243 992-119-438</a>
                                    </p>
                               </div>
                               <div className="row">
@@ -253,7 +269,8 @@ const Home = () => {
                                         <b>Tanzania</b>: PPF Tower, 14th Floor Garden Ave <br />
                                         House No 10, PLot No. 70 Block C <br />
                                         P.O Box 31704 <br />
-                                        <b>Tel</b>: <a href="tel:+255784368358">+255 784-368-358</a>
+                                        <b>Tel</b>: <a href="tel:+255 692 931 231">+255 692 931 231</a> <br />
+                                        <b>Whatsapp</b>: <a href="https://wa.me/+255 653 870 879">+255 653 870 879</a>
                                    </p>
                               </div>
                          </div>
