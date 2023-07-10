@@ -1,4 +1,5 @@
-import { Routes,Route } from "react-router-dom"
+import { useEffect } from "react";
+import { Routes,Route, useLocation } from "react-router-dom"
 import Home from "./Home"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -11,6 +12,11 @@ import SearchContext from "../Context/SearchContext";
 import SearchPage from "./SearchPage";
 
 const PageContent = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location])
   return (
     <SearchContext>
       <Header />
