@@ -11,7 +11,7 @@ const Contact_us = () => {
           <h3>Email us</h3>
         </div>
         <div className="body">
-          <p>If you have a complaint or complement, feel free to email us on <a href='mailto: info.levytradingmotors.co.uk'>info.levytradingmotors.co.uk</a></p>
+          <p>If you have a complaint or complement, feel free to email us on <a href='mailto: info@levytradingmotors.co.uk'>info@levytradingmotors.co.uk</a></p>
         </div>
       </div>
 

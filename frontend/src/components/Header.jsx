@@ -17,8 +17,8 @@ const Header = () => {
                <NavLink to="/"><img src={Logo} alt="company_logo"/></NavLink>
           </div>
           <div className="social-container">
-               <i className="fb"><NavLink><BsFacebook /></NavLink></i>
-               <i className="twitter"><NavLink><FaTwitterSquare /></NavLink></i>
+               <i className="fb"><NavLink to="https://www.facebook.com/profile.php?id=100078261281042&mibextid=LQQJ4d" target="_blank"><BsFacebook /></NavLink></i>
+               <i className="twitter"><NavLink to="https://www.twitter.com/levy_motors" target="_blank"><FaTwitterSquare /></NavLink></i>
                <i className="ig"><NavLink><AiFillInstagram /></NavLink></i>
                <i className="whatsapp"><NavLink to="https://wa.me/+250788303754" target="_blank"><BsWhatsapp /></NavLink></i>
           </div>

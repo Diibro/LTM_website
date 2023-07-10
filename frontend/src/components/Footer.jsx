@@ -35,10 +35,10 @@ const Footer = () => {
           <div className="col">
                <h3>Get Social</h3>
                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Youtube</li>
-                    <li>Instagram</li>
+                    <li><NavLink to="https://www.facebook.com/profile.php?id=100078261281042&mibextid=LQQJ4d" target="_blank" >Facebook</NavLink></li>
+                    <li><NavLink to="https://www.twitter.com/levy_motors" target="_blank">Twitter</NavLink></li>
+                    <li><NavLink>Youtube</NavLink></li>
+                    <li><NavLink>Instagram</NavLink></li>
                </ul>
           </div>
           <div className="col">
