@@ -42,7 +42,7 @@ const Contact_us = () => {
     e.preventDefault();
     console.log("Submitted");
     
-    axios.post("http://localhost:3001/api/add-client-message", {
+    axios.post("https://real-teal-barracuda-sock.cyclic.app/api/add-client-message", {
       name: inputs.name,
       email: inputs.email,
       phone: inputs.phone,
