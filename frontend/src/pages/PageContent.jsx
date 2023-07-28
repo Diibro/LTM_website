@@ -10,6 +10,7 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import UsageTerms from "./UsageTerms";
 import SearchContext from "../Context/SearchContext";
 import SearchPage from "./SearchPage";
+import Products from "./Products";
 
 const PageContent = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const PageContent = () => {
         <Route path="/privacy_policy" element={<PrivacyPolicy/>}  />
         <Route path="/terms_of_use" element={<UsageTerms/>}/>
         <Route path="/search" element={<SearchPage />} />
+        <Route exact={true} path="/all-products" element={<Products/>} />
       </Routes>
       <Footer />
     </SearchContext>

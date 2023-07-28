@@ -234,7 +234,11 @@ body{
 }
 
 .logo_container img{
+     margin: 5px 0 0;
      width: clamp(60px, 25%, 200px);
+     border-radius: 50%;
+     padding: 5px;
+     box-shadow:2px 1px 3px 3px #0e6fdd;
 }
 
 .divider_line{
@@ -641,6 +645,77 @@ body{
 
 }
 
+.product-card {
+     width: clamp(190px, 18%, 500px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.5s;
+     margin: 20px 0 0 ;
+     box-sizing: border-box;
+}
+
+.product-card:hover{
+     cursor: pointer;
+     box-shadow: 1px 1px 5px #001724;
+     border-radius: 5px;
+     padding: 5px;
+}
+
+.product-card img{
+     width: 100%;
+     border-radius: 5px;
+     margin: 0 0 10px;
+     aspect-ratio: 100/60;
+}
+
+.product-card h4{
+     font-size: 16px;
+     font-weight: bold;
+     width: 95%;
+     text-align: justify;
+     color: #003c80;
+     margin: 0;
+}
+
+.product-card p{
+     color: #0a3347;
+     font-size: 16px;
+     width: 90%;
+     text-align: left;
+     margin: 0;
+}
+
+.product-card button{
+     background-color: #003c80;
+     border: none;
+     padding: 5px 10px;
+     color: white;
+     font-weight: bold;
+     border-radius: 5px;
+     transition: all 0.5s;
+     margin: 0 0 10px 5px;
+     position: relative;
+     align-self: flex-start;
+}
+
+.product-card button:hover{
+     cursor: pointer;
+     background-color: white;
+     color: #003c80;
+     border: 1px solid #003c80;
+}
+
+.products-container{
+     width: clamp(390px, 70%, 1600px);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     box-sizing: border-box;
+     flex-wrap: wrap;
+}
 /* Styling the home page */
 
 
@@ -1294,11 +1369,50 @@ body{
      cursor: pointer;
 }
 
+.products_section{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 50px 0;
+}
+
+.products_section h3{
+     width: clamp(390px, 70%, 1600px);
+     margin: 0;
+     font-size: 1.6rem;
+     color: #072547;
+}
+
+.products_section a{
+     color: #003c80;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 0px 10px 0px;
+     font-weight: bold;
+     text-decoration: underline;
+     line-height: 20px;
+     margin: 10px 0;
+}
+
+.products_section a:hover{
+     border-bottom: 2.5px solid #003c80;
+}
 /*Styling the Contact us page*/
 
 .Contact{
      width: clamp(390px, 70%, 1400px);
      margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 20px 0;
+}
+
+.Contact .row_1, .Contact .row_2{
+     width: 100%;
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
@@ -1307,6 +1421,52 @@ body{
      padding: 20px 0;
 }
 
+.Contact .row_1 .container{
+     width: 100%;
+}
+
+.Contact .row_1 .container h2{
+     font-size: 1.2rem;
+     color: #031a35;
+}
+
+.Contact .row_1 .container form{
+     width: clamp(380px, 70%, 800px);
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-evenly;
+     margin:  0 auto;
+}
+
+.Contact .row_1 .container form .inputs{
+     width: clamp(390px, 50%, 600px);;
+}
+
+.Contact .row_1 .container form input, .Contact .row_1 .container form textarea{
+     width: clamp(380px,40%, 600px);
+     border: 1.5px solid #031a35;
+     box-sizing: border-box;
+     padding: 10px 20px;
+     font-size: 18px;
+     border-radius: 10px;
+     margin: 10px 0;
+     font-weight: bold;
+     color: #003c80;
+}
+
+.Contact .row_1 .container form .inputs button{
+     padding: 5px 20px;
+     background-color: #003c80;
+     color: white;
+     font-size: 16px;
+     border-radius: 5px;
+}
+
+.Contact .row_1 .container form .inputs button:hover{
+     cursor: pointer;
+}
 .Contact .Col{
      width: clamp(350px, 25%, 600px);
      display: flex;
@@ -1428,6 +1588,8 @@ body{
      font-size: 0.85rem;
      color: #003c80;
 }
+
+
 
 /*Search page */
 

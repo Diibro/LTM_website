@@ -1,6 +1,6 @@
 import Logo from "../assets/levy1ac.png";
 import { DividerLine } from "./SmallComponents";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {BsFacebook, BsWhatsapp} from 'react-icons/bs';
 import {AiFillInstagram} from 'react-icons/ai';
 import {FaTwitterSquare} from 'react-icons/fa';
@@ -9,7 +9,10 @@ import {FaTwitterSquare} from 'react-icons/fa';
 
 //import{ BsGlobe2} from "react-icons/bs";
 
+
+
 const Header = () => {
+     const navigate = useNavigate();
   return (
     <div className="Header">
      <div className="Header__row Header_1">
@@ -23,7 +26,8 @@ const Header = () => {
                <i className="whatsapp"><NavLink to="https://wa.me/+250788303754" target="_blank"><BsWhatsapp /></NavLink></i>
           </div>
           <div className="signIn_container">
-               <button>Login or Sign up</button>
+               <button onClick={() => navigate("/contact_us")} >Contact us</button>
+
           </div>
      </div>
      <DividerLine />
