@@ -15,6 +15,11 @@ app.use(bodyParser.urlencoded({
      extended: false
 }));
 app.use(cors());
+
+app.use(cors({
+     origin: 'http://localhost:5173'
+   }));
+
 app.use('/Assets', express.static('public'));
 app.use('/api', api);
 
