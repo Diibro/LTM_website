@@ -8,9 +8,10 @@ import Contact_us from "./Contact_us";
 import Help from "./Help";
 import PrivacyPolicy from "./PrivacyPolicy";
 import UsageTerms from "./UsageTerms";
-import SearchContext from "../Context/SearchContext";
+import AppData from "../Context/appcontext";
 import SearchPage from "./SearchPage";
 import Products from "./Products";
+import Product from "./Product";
 
 const PageContent = () => {
   const location = useLocation();
@@ -19,7 +20,7 @@ const PageContent = () => {
     window.scrollTo(0, 0);
   }, [location])
   return (
-    <SearchContext>
+    <AppData>
       <Header />
       <Routes>
         <Route index path="/" element={<Home />}/>
@@ -30,9 +31,10 @@ const PageContent = () => {
         <Route path="/terms_of_use" element={<UsageTerms/>}/>
         <Route path="/search" element={<SearchPage />} />
         <Route exact={true} path="/all-products" element={<Products/>} />
+        <Route path="/product/" element={<Product />}/>
       </Routes>
       <Footer />
-    </SearchContext>
+    </AppData>
   )
 }
 

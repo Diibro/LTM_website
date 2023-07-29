@@ -28,53 +28,14 @@ import Logistic from '../assets/car logos/logitstics_1.png'
 
 import {NavLink, useNavigate} from "react-router-dom";
 import {useRef, useContext} from 'react';
-import { Searched } from "../Context/SearchContext";
+import { AppContext } from "../Context/appcontext";
 
 import { Sec_1 } from "../components/Free_sec/Free_sec";
-import Hyundai_1 from '../assets/carImages/Hyundai-white.jpeg';
-import Hyundai_2 from '../assets/carImages/Hyundai-black.jpeg';
-import Rava4_1 from '../assets/carImages/rava-1.jpeg';
-import Actros_1 from '../assets/carImages/truck-1.jpeg';
-
-
-
-const Cars = [
-     {
-          name: "Hyundai Sonata Hybrid",
-          price: "11,000,000",
-          year: 2013,
-          imageUrl: Hyundai_1
-     },
-     {
-          name: "Hyundai Sonata Hybrid",
-          price: "10,500,000",
-          year: 2012,
-          imageUrl: Hyundai_2
-     },
-     {
-          name: "Toyota Rava 4",
-          price: "10,000,000",
-          year: 2004,
-          imageUrl: Rava4_1
-     },
-     {
-          name: "Hyundai Sonata Hybrid",
-          price: "11,000,000",
-          year: 2013,
-          imageUrl: Hyundai_1
-     },
-     {
-          name: "Hyundai Sonata Hybrid",
-          price: "10,500,000",
-          year: 2012,
-          imageUrl: Hyundai_2
-     },
-     
-];
 
 
 const Home = () => {
-     const  [searched,setSearched] = useContext(Searched);
+     // const  [ searched ,setSearched, stock, setStock] = useContext(AppContext);
+     const {setSearched, stock, setProduct} = useContext(AppContext);
 
      const searchRef = useRef();
      const navigate = useNavigate();
@@ -86,7 +47,7 @@ const Home = () => {
           }
      }
 
-
+     
   return (
     <div className="Home_page">
           <div className="Hello_sec-container">
@@ -159,13 +120,13 @@ const Home = () => {
           <div className="products_section">
                <h3>Popular in Brand new cars</h3>
                <div className="products-container">
-                    {Cars.map((car, index) => {
+                    {stock.map((car, index) => {
                          return(
                               <ProductCard key={index}>
                                    <img src={car.imageUrl} alt={car.name} />
                                    <h4>{car.name} {car.year}</h4>
                                    <p>{car.price} Rwf</p>
-                                   <button>View Product</button>
+                                   <button onClick={() => {setProduct(car); navigate("/product")}}>View Product</button>
                               </ProductCard>
                          )
                     })}

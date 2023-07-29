@@ -1,9 +1,9 @@
 import { useSearchParams } from "react-router-dom";
-import { Searched } from "../Context/SearchContext";
+import { AppContext } from "../Context/appcontext";
 import { useContext, useEffect } from "react";
 
 const SearchPage = () => {
-     const [searched, setSearched] = useContext(Searched); 
+     const {searched, setSearched} = useContext(AppContext); 
      const [searchParams, setSearchedParams] = useSearchParams(searched.search);
      
   return (

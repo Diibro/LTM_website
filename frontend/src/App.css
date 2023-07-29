@@ -188,7 +188,7 @@ body{
 }
 
 .Header  .social-container .ig a{
-     color: #5851DB;
+     color: #db51a2;
      font-size: 25px;
      transition: all 0.2s;
 }
@@ -364,6 +364,12 @@ body{
 
 .Footer_down .col img{
      width: 40%;
+     padding: 10px;
+     box-sizing: border-box;
+     border-radius: 50%;
+     background-color: white;
+     box-shadow:2px 1px 3px 5px #0e6fdd;
+
 }
 
 .Footer_down .col p{
@@ -1600,6 +1606,54 @@ body{
 .activeSearch{
      background: #003c80;
 }
+
+/* product page */
+
+.product {
+     width: clamp(380px, 70%, 1600px );
+     margin: 0 auto;
+}
+
+.product .col-1 {
+     width: clamp(380px,65%, 1000px );
+}
+
+.product .col-1 .row{
+     width: 100%;
+}
+
+.product .col-1 .row h3{
+     width: 100%;
+     background-color: #003c80;
+     color:white;
+     padding: 5px 20px;
+     border-radius: 10px;
+
+}
+
+.product .col-1 .row img{
+     width: 100%;
+     border-radius: 10px;
+     box-shadow:1px 1px 5px  #003c80;
+}
+
+.product .col-1 .row-2{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.product .col-1 .row-2 img{
+     width: 200px;
+     max-height: 200px;
+     margin: 10px 0 5px;
+     box-shadow: 1px 1px 5px #001724;
+     border-radius: 5px;
+}
+
 @media (max-width: 1200px){
      :root{
           font-size: 18px;
