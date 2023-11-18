@@ -1,8 +1,10 @@
+import { useSearchParams } from "react-router-dom";
 import { AppContext } from "../Context/appcontext";
 import { useContext } from "react";
 
 const Product = () => {
   const { product } = useContext(AppContext);
+  const [searchParams, setSearchedParams] = useSearchParams(product.name);
 
   // Null check for product
   if (!product) {
